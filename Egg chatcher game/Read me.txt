@@ -1,0 +1,11 @@
+Flipkart is one of the most popular Indian companies. It is an e-commerce platform that competes with popular e-commerce platforms like Amazon. One of the most popular use cases of data science is the task of sentiment analysis of product reviews sold on e-commerce platforms. So, if you want to learn how to analyze the sentiment of Flipkart reviews, this article is for you. In this article, I will walk you through the task of Flipkart reviews sentiment analysis using Python.
+
+
+The dataset I am using here for Flipkart reviews sentiment analysis is downloaded from Kaggle. Let’s start this task by importing the necessary Python libraries and the dataset
+
+he Rating column of the data contains the ratings given by every reviewer
+
+
+Now I will analyze the sentiments of Flipkart reviews by adding three columns in this dataset as Positive, Negative, and Neutral by calculating the sentiment scores of the reviews:
+
+So, most people give Neutral reviews, and a small proportion of people give Negative reviews. So we can say that people are satisfied with Flipkart products and services. I hope you liked this article on Flipkart sentiment analysis using Python. 
