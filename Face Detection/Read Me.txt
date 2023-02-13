@@ -1,0 +1,1 @@
+This is a face detection module in Python this modules uses your camera to detec your face and recognize your face using Open CV this module detects the face and puts a square around the face fully developed using Python
