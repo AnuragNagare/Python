@@ -1,0 +1,9 @@
+The  Python code uses Keras to load a pre-trained model for recognizing handwritten digits from the MNIST dataset. The program opens a GUI window that allows the user to draw a digit using the mouse. When the "Recognise" button is clicked, the program captures an image of the drawing and uses the pre-trained model to predict which digit was drawn. The predicted digit and its corresponding accuracy are displayed in a label on the GUI window.
+
+The program uses the tkinter library for creating the GUI and the win32gui library for capturing the image of the drawing. The PIL library is used for manipulating the image before passing it to the model for prediction.
+
+The program defines a function predict_digit that resizes the image to 28x28 pixels, converts it to grayscale, reshapes it to match the input of the pre-trained model, and finally normalizes the pixel values. The model is then used to predict the class of the image, and the function returns the predicted digit and its corresponding accuracy.
+
+The App class defines the GUI elements and binds them to functions that handle user input. The classify_handwriting function captures the image of the drawing and uses the predict_digit function to classify the digit. The draw_lines function handles mouse input and draws a black circle on the canvas to represent the digit being drawn.
+
+Overall, the program demonstrates the use of a pre-trained machine learning model for recognizing handwritten digits and provides a user-friendly interface for testing the model.
