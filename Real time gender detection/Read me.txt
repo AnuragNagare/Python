@@ -1,18 +1,15 @@
 Real-time Gender Detection System
 
-To create a gender detection system using Python, we need to train a model with some high-level features of the face of human beings such as:
+The above  performs real-time gender detection using the cvlib library in Python.
 
-the distance between eyes, nose, and mouth 
+First, it initializes a video capture object using the cv2.VideoCapture(0) method, where 0 represents the default camera device.
 
-and measurements of different parts of the face of both the genders
+It then starts a loop to read frames from the camera using webcam.read(). For each frame, it detects faces using cv.detect_face(frame) and draws a rectangle around each face using cv2.rectangle().
 
-There are many libraries and frameworks in Python that can be used to create a real-time gender detection system. Some of these libraries include Yolo, Tensorflow, OpenCV, and Cvlib. So here I am going to use the Cvlib library in Python that can be used to detect the gender of a person in a few lines of code.
+For each detected face, it crops the face region and passes it to the cv.detect_gender() method to detect the gender. It then draws a label on the frame using cv2.putText(), indicating the detected gender and confidence level.
 
-Along with Cvlib, I will also be using the OpenCV library in Python so that we can detect a person’s gender using a webcam.
+Finally, it displays the resulting frame in a window using cv2.imshow(). The loop continues until the user presses the "s" key, at which point it stops the video capture using webcam.release() and closes all windows using cv2.destroyAllWindows().
 
-
-
-If you want to stop this program from running, just press “s” and it will stop your program from running.
 
 
 
